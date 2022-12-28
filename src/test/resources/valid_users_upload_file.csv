@@ -1,0 +1,10 @@
+id,login,name,salary,startDate
+# this is a comment line
+e0001,hpotter,Harry Potter,1234.84,16-Nov-01
+e0002,rwesley,Ron Weasley,19234.50,2001-11-16
+e0003,居住证申请,Severus Snape,4000.0,2001-11-16
+e0004,rhagrid,Rubeus Hagrid,3999.999,16-Nov-01
+e0005,voldemort,Lord Voldemort,523.4,17-Nov-01
+e0006,gwesley,Ginny Weasley,4000.004,18-Nov-01
+e0007,hgranger,Hermione Granger,0.0,2001-11-18
+e0008,adumbledore,Albus Dumbledore,341.23,2001-11-19

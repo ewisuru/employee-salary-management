@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: salary-mgmt
+  name: salary-mgmt
+spec:
+  containers:
+    - image: salary-mgmt
+      imagePullPolicy: Never
+      name: salary-mgmt
+      env:
+        - name: POSTGRES_USER
+          valueFrom:
+            configMapKeyRef:
+              name: postgres-config
+              key: postgres_user
+        - name: POSTGRES_PASSWORD
+          valueFrom:
+            configMapKeyRef:
+              name: postgres-config
+              key: postgres_password
+        - name: POSTGRES_HOST
+          valueFrom:
+            configMapKeyRef:
+              name: hostname-config
+              key: postgres_host

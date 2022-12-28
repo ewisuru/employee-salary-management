@@ -1,0 +1,1 @@
+insert into USERS (id, login, name, salary, start_date) values ('1', 'user1', 'user1', 1000, '2001-11-16');
