@@ -45,7 +45,7 @@ public class UserServiceImpl implements UserService {
     Iterable<Users> savedUsers = saveUsers(usersList);
     boolean newUsersCreated = IterableUtils.size(existingUsers) != IterableUtils.size(savedUsers);
     log.info(
-        "Uploading completed with creating and updating {} users", IterableUtils.size(savedUsers));
+        "Uploading completed with creating and updating {} users.", IterableUtils.size(savedUsers));
     return new SimpleResponseDto(
         newUsersCreated ? ResponseMessage.USERS_CREATED : ResponseMessage.USERS_UPDATED);
   }
